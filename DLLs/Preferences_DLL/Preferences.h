@@ -13,7 +13,7 @@
 //******************************************************************************
 
 #ifdef PREFERENCES_DLL_EXPORTS
-#define DEBUG_DLL_API __declspec(dllexport)
+#define PREFERENCES_DLL_API __declspec(dllexport)
 #else
 #define PREFERENCES_DLL_API __declspec(dllimport)
 #endif
@@ -167,7 +167,7 @@ enum {
   k_prefs_last_CString_value,
 };
 
-class DEBUG_DLL_API CPreferences {
+class PREFERENCES_DLL_API CPreferences {
 public:
   // public functions
   CPreferences();
@@ -344,6 +344,6 @@ private:
   CString ini_filename;
 };
 
-DEBUG_DLL_API CPreferences* Preferences();
+PREFERENCES_DLL_API CPreferences* Preferences();
 
 

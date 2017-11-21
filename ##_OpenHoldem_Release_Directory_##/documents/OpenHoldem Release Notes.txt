@@ -1,4 +1,4 @@
-﻿﻿v﻿12.1.3 2017-11-xx
+﻿﻿v﻿12.1.3 2017-11-25
 ==================
 BUG FIXES:
 - The new symbol bigstackchair incorrectly considered folded players.
@@ -9,10 +9,11 @@ BUG FIXES:
   [THF]
   
 MAINTENANCE:
-- Restructuring OpenHoldem and introducing 3 new DLLs:
+- Restructuring OpenHoldem and introducing four new DLLs:
     * Debug.DLL
     * Files.DLL
     * GamestateValidation.DLL
+	* Preferences.DLL
   We need smaller, manageable software-modules with clean interfaces. 
   [THF]
   

@@ -18,6 +18,7 @@
 #define PREFERENCES_DLL_API __declspec(dllimport)
 #endif
 
+#include <afxwin.h>
 #include "..\..\Shared\CCritSec\CCritSec.h"
 
 // global preferences constants
@@ -312,8 +313,8 @@ public:
   // Popup blocker
   const int popup_blocker() { return prefs_numerical_values[k_prefs_popup_blocker]; }
   // Obscure
-  const CString &window_class_name() { return prefs_CString_values[k_prefs_window_class_name]; }
-  const CString &mutex_name() { return prefs_CString_values[k_prefs_mutex_name]; }
+  const CString window_class_name() { return prefs_CString_values[k_prefs_window_class_name]; }
+  const CString mutex_name() { return prefs_CString_values[k_prefs_mutex_name]; }
   bool simple_window_title() { return prefs_numerical_values[k_prefs_simple_window_title]; }
   // CFileDialog saved paths
   const CString path_tm() { return prefs_CString_values[k_prefs_path_tm]; }
